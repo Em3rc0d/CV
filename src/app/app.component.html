@@ -1,35 +1,42 @@
 <div class=" w-screen h-screen flex flex-col">
 <nav class="bg-gray-800">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 ">
-      <div class="relative flex h-16 items-center justify-between">
-        <div class="flex flex-1 items-center my-auto justify-center sm:items-stretch sm:justify-center">
+      <div class="relative flex h-16 items-center justify-between max-md:hidden">
+        <div class="flex flex-1 items-center my-auto justify-center sm:items-stretch sm:justify-center sm:my-auto">
             <div class="flex items-center flex-row my-auto w-full ">
-                <p class="text-3xl md:text-2xl font-bold text-white">
+                <p class="font-bold text-white">
                     Eduardo Merino
                   </p>
-                  <p class="text-xl md:text-l sm:text-s text-white">
+                  <p class="text-white">
                       / Systems Engineering Student
                   </p>
             </div>
         </div>
-        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-end">
-          <div class="hidden sm:ml-6 sm:block">
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center sm:text-center">
+          <div class="max-sm:hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
-              <a routerLink="about-me" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About Me</a>
-              <a routerLink="education" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Education</a>
-              <a routerLink="contact" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact</a>
+              <a routerLink="about-me" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium  max-md:justify-center">About Me</a>
+              <a routerLink="education" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium  max-md:justify-center">Education</a>
+              <a routerLink="contact" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium  max-md:justify-center">Contact</a>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="sm:hidden" id="mobile-menu">
-        
-      <div class="space-y-1 px-2 pb-3 pt-2">
+    <div class="md:hidden" id="mobile-menu">
+      <div class="flex items-center justify-center mt-2 mx-auto">
+        <p class="max-sm:text-base font-bold text-white">
+          Eduardo Merino
+        </p>
+        <p class="max-sm:text-sm text-white">
+            / Systems Engineering Student
+        </p>
+      </div>
+      <div class="space-y-1 px-2 pb-3 pt-2 text-center">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
         <a routerLink="about-me" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About Me</a>
-        <a routerLink="education" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Education</a>
+        <a routerLink="education" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium max-md:hidden">Education</a>
         <a routerLink="contact" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contact</a>
       </div>
     </div>
